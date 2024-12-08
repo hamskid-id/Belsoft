@@ -15,8 +15,9 @@ const Accordium: React.FC<IAccordium> = ({ title, info }: IAccordium) => {
 
   const handleToggle = useCallback(() => {
     setIsOpen((prevState) => !prevState)
-    serviceAccordium.current !== null &&
-      serviceAccordium.current.classList.toggle('active')
+    if(serviceAccordium.current !== null){
+        serviceAccordium.current.classList.toggle('active')
+      }
   }, [])
 
   return (

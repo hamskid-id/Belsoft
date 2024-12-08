@@ -37,7 +37,7 @@ const Person: React.FC<IPerson> = ({ img, title, description }) => {
 }
 
 const ReviewStories: React.FC = () => {
-  const swiperRef = React.useRef<any>(null)
+  const swiperRef = React.useRef<any>(null) // eslint-disable-line @typescript-eslint/no-explicit-any
   return (
     <div className='flex flex-col gap-4 w-full'>
       <div className='flex items-center gap-4 ms-auto justify-end md:mb-4 mb-0'>

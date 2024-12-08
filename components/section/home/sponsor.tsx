@@ -26,7 +26,9 @@ export const Sponsor = () => {
     }
   })
 
-  async function onSubmit(values: z.infer<typeof SponsorFormSchema>) {}
+  async function onSubmit(values: z.infer<typeof SponsorFormSchema>) {
+    console.log(values)
+  }
 
   return (
     <MaxScreenView style='flex flex-col md:px-[4rem] px-4 bg-base_white z-[900] md:pb-[5rem] pb-[3rem]'>
@@ -43,12 +45,18 @@ export const Sponsor = () => {
         Why Sponsor Founders Friday?
       </Text>
       <div className='flex md:flex-row flex-col gap-[27px]'>
-        <CustomImage src={frame} style='md:h-[600px] h-[290px] md:width-[50%] w-full ' />
+        <CustomImage
+          src={frame}
+          style='md:h-[600px] h-[290px] md:width-[50%] w-full '
+        />
         <div className='flex flex-col md:width-[50%] w-full mb-2'>
           <Text style='font-bold md:text-[28px] text-[20px]' as='h3'>
             How To Sponsor
           </Text>
-          <Text style='md:text-[24px] text-[17px] opacity-75 italic mb-2' as='h1'>
+          <Text
+            style='md:text-[24px] text-[17px] opacity-75 italic mb-2'
+            as='h1'
+          >
             Ready to Make an Impact?
           </Text>
           <Text style=' md:text-[15px] text-[14px] opacity-75 mb-8' as='h3'>
@@ -58,7 +66,11 @@ export const Sponsor = () => {
           </Text>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='flex-grow'>
-              <div className={'grid md:grid-cols-2 grid-cols-1 w-full flex-col md:gap-8 gap-5'}>
+              <div
+                className={
+                  'grid md:grid-cols-2 grid-cols-1 w-full flex-col md:gap-8 gap-5'
+                }
+              >
                 <FormInputField
                   inputStyle={inputStyle}
                   control={form.control}

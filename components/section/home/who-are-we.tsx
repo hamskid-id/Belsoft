@@ -29,7 +29,7 @@ const InfoContainer: React.FC = () => (
       </div>
     </div>
     <Text style='font-[600] md:text-[16px] text-[14px]' as='h5'>
-      Founder's Friday is more than just a meetup — it's a movement.
+      {`Founder's Friday is more than just a meetup — it's a movement.`}
     </Text>
     <CustomImage src={line} style=' absolute md:top-[2.1rem] top-[1.5rem] bottom-[0.5rem] left-0 w-[2.5rem]'/>
   </div>

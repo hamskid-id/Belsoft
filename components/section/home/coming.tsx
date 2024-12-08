@@ -16,7 +16,7 @@ import { Autoplay, Mousewheel } from 'swiper/modules'
 import React from 'react'
 
 const SwiperContainer: React.FC = () => {
-  const swiperRef = React.useRef<any>(null)
+  const swiperRef = React.useRef<any>(null) // eslint-disable-line @typescript-eslint/no-explicit-any
   return (
     <div className='relative comingswiper'>
       <Swiper
