@@ -19,7 +19,7 @@ import { IPerson } from '@/lib/types/global'
 const Person: React.FC<IPerson> = ({ img, title, description }) => {
   return (
     <div className=' flex flex-col justify-center items-center'>
-      <div className='rounded-full p-3 border border-deep-purple mb-2'>
+      <div className='rounded-full p-3 border border-purple mb-2'>
         <CustomImage
           src={img}
           style='w-[145px] h-[145px]'

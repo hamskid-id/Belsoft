@@ -28,7 +28,7 @@ const Accordium: React.FC<IAccordium> = ({ title, info }: IAccordium) => {
       >
         <div className='flex md:flex-row flex-col md:gap-4 md:gap-[30px] gap-2 items-center'>
           <div className='flex md:gap-4 gap-2 items-center me-auto'>
-            <div className='w-4 h-4 bg-deep_purple rounded-full'></div>
+            <div className='w-4 h-4 bg-purple rounded-full'></div>
             <Text
               style={
                 'md:text-[20px] md:leading-[28px] text-[16px] md:leading-[22.4px] font-[500]'
