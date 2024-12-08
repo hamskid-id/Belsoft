@@ -14,6 +14,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Autoplay, Mousewheel } from 'swiper/modules'
 import React from 'react'
+import { RevealAnimation } from '@/components/global/reveal'
 
 const SwiperContainer: React.FC = () => {
   const swiperRef = React.useRef<any>(null) // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -50,7 +51,7 @@ const SwiperContainer: React.FC = () => {
 }
 
 const InfoContainer: React.FC = () => (
-  <div className='text-white flex flex-col lg:items-start items-center lg:justify-start justify-center gap-[7px] relative lg:w-[50%] w-full'>
+  <RevealAnimation style='text-white flex flex-col lg:items-start items-center lg:justify-start justify-center gap-[7px] relative lg:w-[50%] w-full'>
     <Text
       style='font-bold md:text-[25px] text-[17px] lg:text-start text-center'
       as='h3'
@@ -71,7 +72,7 @@ const InfoContainer: React.FC = () => (
     <Button className='flex items-center justify-center text-[#A649FF] border border-[#A649FF] bg-transparent rounded-full lg:h-[48px] h-[48px] w-[180px] lg:text-[16px] text-[14px] font-[400]'>
       Register <ArrowRight className='text-[#A649FF] w-4' />
     </Button>
-  </div>
+  </RevealAnimation>
 )
 
 export const Coming: React.FC = () => (

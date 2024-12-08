@@ -10,9 +10,10 @@ import ellipse4 from '../../../public/home/Ellipse 4.svg'
 import ellipse5 from '../../../public/home/Ellipse 5.svg'
 import group from '../../../public/home/Group 1.svg'
 import { MaxScreenView } from '@/components/global/max-screen'
+import { RevealAnimation } from '@/components/global/reveal'
 
 const InfoContainer: React.FC = () => (
-  <div className='pb-8 flex flex-col md:ps-4 ps-0 xl:w-[60%] w-full bg-base_white z-[900] xl:z-[-1] xl:items-start items-center xl:justify-start justify-center'>
+  <RevealAnimation style='pb-8 flex flex-col md:ps-4 ps-0 xl:w-[60%] w-full bg-base_white z-[900] xl:z-[-1] xl:items-start items-center xl:justify-start justify-center'>
     <Text as='h6' style=' font-[600] text-[14px] xl:text-start text-center'>
       Join our premier monthly meetup for startup founders and tech visionaries
     </Text>
@@ -53,7 +54,7 @@ const InfoContainer: React.FC = () => (
       )}
     </div>
     <CustomImage src={frame19} style='w-[160px] h-[34px] cursor-pointer' />
-  </div>
+  </RevealAnimation>
 )
 
 const ImagesPlaceHolder: React.FC = () => (

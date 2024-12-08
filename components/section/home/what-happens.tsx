@@ -5,9 +5,10 @@ import foundersImg from '../../../public/home/Frame 714.svg'
 import line from '../../../public/home/lineThrough.svg'
 import { CustomImage } from '@/components/global/image'
 import { MaxScreenView } from '@/components/global/max-screen'
+import { RevealAnimation } from '@/components/global/reveal'
 
 const InfoContainer: React.FC = () => (
-  <div className='flex flex-col lg:items-start items-center lg:justify-start justify-center gap-[12px] relative md:width-[70%] w-full'>
+  <RevealAnimation style='flex flex-col lg:items-start items-center lg:justify-start justify-center gap-[12px] relative md:width-[70%] w-full'>
     <Text style='font-bold md:text-[25px] text-[17px] text-deep_purple lg:text-start text-center' as='h3'>
       Founders Friday
     </Text>
@@ -27,7 +28,7 @@ const InfoContainer: React.FC = () => (
     <Button className='flex items-center justify-center text-white border border-[#A649FF] bg-[#A649FF] rounded-[10px] lg:h-[48px] h-[48px] w-[180px] lg:text-[16px] text-[14px] font-[400]'>
       Learn More <ArrowRight className='text-white w-4' />
     </Button>
-  </div>
+  </RevealAnimation>
 )
 
 export const WhatHappens: React.FC = () => (
