@@ -77,7 +77,7 @@ const ReviewStories: React.FC = () => {
               spaceBetween: 10
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 3,
               spaceBetween: 15
             },
             1024: {

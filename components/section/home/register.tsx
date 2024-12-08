@@ -17,14 +17,14 @@ const Editors: React.FC = () => (
     />
     <div className='flex flex-col md:width-[50%] w-full gap-[24px]'>
       <Text
-        style='font-[600] md:text-[24px] text-[20px] lg:w-[85%] w-full xl:text-start text-center'
+        style='font-[600] md:text-[24px] text-[20px] lg:w-[85%] w-full md:text-start text-center'
         as='h2'
       >
         {`At Founder’s Friday, Every Friday Is a Learning Experience!`}
       </Text>
-      <Text as='h6' style=' font-[600] text-[17px] xl:text-start text-center'>
-        Join us in our mission to transform ideas into impact and shape the
-        future of Nigeria’s startup landscape.
+      <Text as='h6' style=' font-[600] text-[17px] md:text-start text-center'>
+        {`Join us in our mission to transform ideas into impact and shape the
+        future of Nigeria’s startup landscape.`}
       </Text>
       <Button className='mb-8 m-auto md:m-0 flex items-center justify-center text-white border border-white bg-[#A649FF] rounded-full lg:h-[48px] h-[48px] w-[180px] lg:text-[16px] text-[14px] font-[400]'>
         Register <ArrowRight className='text-white w-4' />

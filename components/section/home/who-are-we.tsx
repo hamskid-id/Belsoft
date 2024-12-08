@@ -8,7 +8,7 @@ import { CustomImage } from '@/components/global/image'
 import { MaxScreenView } from '@/components/global/max-screen'
 
 const InfoContainer: React.FC = () => (
-  <div className='flex flex-col gap-[24px] relative justify-between ps-[2.5rem] lg:order-last order-1'>
+  <div className='flex flex-col gap-[24px] relative justify-between ps-[2.5rem]'>
     <div className='flex flex-col gap-[28px]'>
       <Text style='font-bold md:text-[45px] text-[25px]' as='h1'>
         Who are we
@@ -37,7 +37,7 @@ const InfoContainer: React.FC = () => (
 
 export const WhoAreWe: React.FC = () => (
   <MaxScreenView style='relative grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-4 md:px-[3rem] px-4 bg-base_white z-[900] xl:mt-[-4rem] mt-0'>
-    <CustomImage src={peopleImg} style='md:h-[490px] h-[240px] lg:order-1 order-last'/>
+    <CustomImage src={peopleImg} style='md:h-[490px] h-[240px]'/>
     <InfoContainer />
   </MaxScreenView>
 )

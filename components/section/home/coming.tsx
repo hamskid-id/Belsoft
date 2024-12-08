@@ -38,7 +38,7 @@ const SwiperContainer: React.FC = () => {
           <SwiperSlide key={index}>
             <Text
               key={index}
-              style='font-bold md:text-[65px] text-[#A649FF] text-[35px] leading-[125%] mb-4 lg:text-start text-center md:w-[75%] w-auto'
+              style='font-bold md:text-[65px] text-[#A649FF] text-[35px] leading-[125%] mb-4 md:text-start text-center md:w-[75%] w-auto'
               as='h1'
             >
               {info}
@@ -51,16 +51,16 @@ const SwiperContainer: React.FC = () => {
 }
 
 const InfoContainer: React.FC = () => (
-  <RevealAnimation style='text-white flex flex-col lg:items-start items-center lg:justify-start justify-center gap-[7px] relative lg:w-[50%] w-full'>
+  <RevealAnimation style='text-white flex flex-col md:items-start items-center md:justify-start justify-center gap-[7px] relative md:w-[50%] w-full'>
     <Text
-      style='font-bold md:text-[25px] text-[17px] lg:text-start text-center'
+      style='font-bold md:text-[25px] text-[17px] md:text-start text-center'
       as='h3'
     >
       Founders Friday is coming to
     </Text>
     <SwiperContainer />
     <Text
-      style='md:text-[20px] text-[14px] font-light leading-[120%] opacity-75 mb-4 lg:text-start text-center'
+      style='md:text-[20px] text-[14px] font-light leading-[120%] opacity-75 mb-4 md:text-start text-center'
       as='h2'
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac rutrum
@@ -69,7 +69,7 @@ const InfoContainer: React.FC = () => (
       ante quis quam lobortis consequat eu id turpis. Pellentesque habitant
       morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
     </Text>
-    <Button className='flex items-center justify-center text-[#A649FF] border border-[#A649FF] bg-transparent rounded-full lg:h-[48px] h-[48px] w-[180px] lg:text-[16px] text-[14px] font-[400]'>
+    <Button className='flex items-center justify-center text-[#A649FF] border border-[#A649FF] bg-transparent rounded-full md:h-[48px] h-[48px] w-[180px] md:text-[16px] text-[14px] font-[400]'>
       Register <ArrowRight className='text-[#A649FF] w-4' />
     </Button>
   </RevealAnimation>
@@ -77,7 +77,7 @@ const InfoContainer: React.FC = () => (
 
 export const Coming: React.FC = () => (
   <section className='coming_bg'>
-    <MaxScreenView style='md:py-[5rem] py-[3rem] justify-between flex lg:flex-row items-center flex-col md:gap-[32px] gap-6 md:px-[4rem] px-4 z-[900]'>
+    <MaxScreenView style='md:py-[5rem] py-[3rem] justify-between flex md:flex-row items-center flex-col md:gap-[32px] gap-6 md:px-[4rem] px-4 z-[900]'>
       <InfoContainer />
       <CustomImage
         src={foundersImg}
