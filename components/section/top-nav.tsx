@@ -38,7 +38,7 @@ export const TopNav = () => {
 
   return (
     <header>
-      <MaxScreenView style='shadow-sm lg:px-[4rem] lg:px-[2.5rem] px-2 lg:py-1 py-2 fixed top-0 left-0 right-0 z-[1000] bg-base_white flex lg:flex-row flex-col justify-between lg:items-center items-start lg:gap-[12px] gap-0'>
+      <MaxScreenView style='shadow-sm border-b-[0.5px] border-[gainsboro] lg:px-[4rem] lg:px-[2.5rem] px-2 lg:py-1 py-2 fixed top-0 left-0 right-0 z-[1000] bg-base_white flex lg:flex-row flex-col justify-between lg:items-center items-start lg:gap-[12px] gap-0'>
         <CustomImage
           src={brand}
           priority={true}

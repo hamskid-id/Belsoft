@@ -51,7 +51,7 @@ const SwiperContainer: React.FC = () => {
 }
 
 const InfoContainer: React.FC = () => (
-  <RevealAnimation style='text-white flex flex-col md:items-start items-center md:justify-start justify-center gap-[7px] relative md:w-[50%] w-full'>
+  <RevealAnimation side={true} style='text-white flex flex-col md:items-start items-center md:justify-start justify-center gap-[7px] relative md:w-[50%] w-full'>
     <Text
       style='font-bold md:text-[25px] text-[17px] md:text-start text-center'
       as='h3'
