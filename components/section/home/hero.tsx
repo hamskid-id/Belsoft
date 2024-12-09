@@ -13,7 +13,7 @@ import { MaxScreenView } from '@/components/global/max-screen'
 import { RevealAnimation } from '@/components/global/reveal'
 
 const InfoContainer: React.FC = () => (
-  <RevealAnimation  side={true} style='pb-8 flex flex-col md:ps-4 ps-0 xl:w-[60%] w-full bg-base_white z-[900] xl:z-[-1] xl:items-start items-center xl:justify-start justify-center'>
+  <RevealAnimation  side={true} style='pb-8 flex flex-col md:ps-4 ps-0 xl:w-[53%] w-full bg-base_white z-[900] xl:z-[-1] xl:items-start items-center xl:justify-start justify-center'>
     <Text as='h6' style=' font-[600] text-[14px] xl:text-start text-center'>
       Join our premier monthly meetup for startup founders and tech visionaries
     </Text>
@@ -61,7 +61,7 @@ const ImagesPlaceHolder: React.FC = () => (
   <CustomImage
     src={group}
     imgStyle='xl:object-contain sm:object-cover xl:object-center object-right xl:block hidden'
-    style='xl:w-[932px] w-full xl:h-full h-[435px] md:[935px] lg:h-[1035px] xl:absolute relative top-[-2rem] bottom-0 right-0 xl:block hidden'
+    style='xl:w-[932px] w-full xl:h-[1000px] h-[435px] md:[935px] lg:h-[1035px] xl:absolute relative top-[-2rem] bottom-0 right-[2rem] xl:block hidden'
   />
 )
 

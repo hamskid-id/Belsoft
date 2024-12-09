@@ -36,8 +36,8 @@ const InfoContainer: React.FC = () => (
 )
 
 export const WhoAreWe: React.FC = () => (
-  <MaxScreenView style='relative grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-4 md:px-[3rem] px-4 bg-base_white z-[900] xl:mt-[-4rem] mt-0'>
-    <CustomImage src={peopleImg} style='md:h-[490px] h-[240px]'/>
+  <MaxScreenView style='relative grid lg:grid-cols-2 grid-cols-1 md:gap-10 gap-4 md:px-[3rem] px-4 bg-base_white z-[900] xl:mt-[10rem] mt-0'>
+    <CustomImage src={peopleImg} style='md:h-[690px] lg:h-[490px] h-[240px]' imgStyle='md:object-cover object-contain md:rounded-[20px] rounded-none'/>
     <InfoContainer />
   </MaxScreenView>
 )

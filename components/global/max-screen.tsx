@@ -5,5 +5,5 @@ export const MaxScreenView: React.FC<IMaxScreenWrapperPropType> = ({
   style,
   children
 }) => {
-  return <div className={cn('m-auto max-w-[1440px]', style)}>{children}</div>
+  return <div className={cn('m-auto max-w-[1480px]', style)}>{children}</div>
 }
